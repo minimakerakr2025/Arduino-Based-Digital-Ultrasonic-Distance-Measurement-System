@@ -1,0 +1,30 @@
+Circuit Connection Details
+
+Arduino Nano + HC-SR04 + 0.96" OLED
+
+HC-SR04 Ultrasonic Sensor
+----------------------------------------------
+
+HC-SR04	         Arduino Nano
+VCC	----------------5V
+GND	----------------GND
+TRIG---------------	D2
+ECHO---------------	D3
+
+0.96" OLED I2C Display
+--------------------------------------------
+
+OLED	          Arduino Nano
+
+VCC----------------5V*
+GND----------------GND
+SDA	---------------A4
+SCL	---------------A5
+
+*Use 3.3V instead if your particular OLED module is rated only for 3.3V.
+
+Communication:
+-------------------------------------------
+HC-SR04 → Digital pins D2, D3
+OLED → I2C pins A4 (SDA), A5 (SCL)
+All components must share common GND.
